@@ -10,8 +10,8 @@ import _pickle as cpickle
 import os 
 
 
-outputImagePath='/home/ashish/Desktop/summer_IITG/outputImages'
-meanImagePath='/home/ashish/Desktop/summer_IITG/MeanImages'
+outputImagePath='../outputImages'
+meanImagePath='../MeanImages'
 if not os.path.exists(outputImagePath):
     os.makedirs(outputImagePath)
 
