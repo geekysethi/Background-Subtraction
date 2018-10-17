@@ -9,7 +9,7 @@ import glob
 def denoise(frame):
 	
 	frame=cv2.medianBlur(frame,5)
-	frame=cv2.GaussianBlur(frame,(5,5),0)
+	frame=cv2.GaussianBlur(frame,(10,10),0)
 
 	return frame
 

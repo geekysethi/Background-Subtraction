@@ -34,6 +34,7 @@ class backgroundModel:
 
 				self.meanImage[i,j]=mean
 				self.varianceImage[i,j]=variance
+				self.alpha=0
 
 		self.meanImage = self.meanImage.astype(np.uint8)
 		self.varianceImage = self.varianceImage.astype(np.uint8)
@@ -57,7 +58,7 @@ class backgroundModel:
 	def update_alpha(self,alpha):
 
 		self.alpha = 1/(alpha+1)
-		
+		 
 				
 
 	def backgroundSubtraction(self,currentFrame):
